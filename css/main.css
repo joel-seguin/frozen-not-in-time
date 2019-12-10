@@ -5,7 +5,17 @@ html {
 .card {
   border-top: solid 5px #b3fbff;
   border-bottom: solid 5px #b3fbff;
-  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%, #d4fdff 1%, #d4fdff 2%, #c9fcff 2%);
+  background-image: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+}
+
+img {
+  width: 8.5;
+}
+
+.text {
+  text-shadow: opacity(0);
+  animation: text-a .75s 1s ease-n forwards;
+  filter: opacity(0);
 }
 
 .head {
@@ -13,7 +23,11 @@ html {
 }
 
 .body {
-  transform: translate(2.6em, -2em);
+  transform: rotate(-5deg);
+  position: relative;
+  left: -.15em;
+  color: #c09;
+  transform-origin: left center;
 }
 
 .enjoy {
@@ -38,59 +52,130 @@ h2 {
 }
 
 .btn {
-  position: absolute;
+  position: relative;
+  top: 2.5;
+  left: 2em;
+}
+
+.btn-ghost {
+  position: relative;
   border-color: #990073;
   color: #c09;
 }
 
+.btn-ghost:hover {
+  background-color: #c09;
+}
+
+.icecreem {
+  min-height: 480px;
+}
+
+.drop {
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+}
+
 .cone {
-  position: absolute;
-  width: 9em;
-  transform: translate(12em, 16em);
-  z-index: 10;
+  animation: cone .25s ease-in forwards;
+  z-index: 9;
 }
 
 .mint {
-  position: absolute;
-  width: 9em;
-  transform: translate(11.5em, 8em);
-  z-index: 5;
+  animation: mint .25s .2s ease-in forwards;
+  z-index: 1;
 }
 
 .chocolate {
-  position: absolute;
-  width: 9em;
-  transform: translate(11.5em, 5em);
-  z-index: 5;
+  animation: chocolate-f .25s .4s ease-in forwards;
+  z-index: 4;
 }
 
 .vanilla {
-  position: absolute;
-  width: 9em;
-  transform: translate(11.5em, 2em);
-  z-index: 5;
+  animation: vanilla .25s .6s ease-in forwards;
+  z-index: 7;
 }
 
 .cherry {
-  position: absolute;
-  transform: translate(11.5em, 0em);
+  animation: cherry .25s .8s ease-in forwards;
   z-index: 10;
 }
 
-@media only screen and (min-width: 90em) {
+@keyframes cherry {
 
-  .icecreem {
-    position: relative;
-    height: 25em;
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 350px;
   }
 
 }
 
-@media only screen and (min-width: 90em) {
+@keyframes vanilla {
 
-  .icecreem {
-    position: relative;
-    height: 23.1em;
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 265px;
+  }
+
+}
+
+@keyframes chocolate-f {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 190px;
+  }
+
+}
+
+@keyframes mint {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 105px;
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+
+}
+
+@keyframes text-a {
+
+  0% {
+    filter: opacity(0) blur(5px);
+  }
+
+  0% {
+    filter: blur(0);
+  }
+
+  100% {
+    filter: blur(100);
   }
 
 }
