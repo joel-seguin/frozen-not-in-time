@@ -3,9 +3,9 @@ html {
 }
 
 .card {
-  border-top: solid 8px #b3fbff;
-  border-bottom: solid 8px #b3fbff;
-  background-image: repeating-linear-gradient(-33deg, #c9fcff 1%, #d4fdff 1% #d4fdff 2%, #c9fcff 2%);
+  border-top: solid 5px #b3fbff;
+  border-bottom: solid 5px #b3fbff;
+  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%, #d4fdff 1%, #d4fdff 2%, #c9fcff 2%);
 }
 
 .head {
@@ -22,10 +22,11 @@ html {
 
 h1 {
   position: absolute;
-  font-size: 70px
+  font-size: 70px;
   transform-origin: left center;
   transform: rotate(-10deg);
   max-width: 19em;
+  color: #990073;
 }
 
 h2 {
@@ -39,7 +40,7 @@ h2 {
 .btn {
   position: absolute;
   border-color: #990073;
-  color: #c09
+  color: #c09;
 }
 
 .cone {
@@ -72,7 +73,6 @@ h2 {
 
 .cherry {
   position: absolute;
-  width: 5em;
   transform: translate(11.5em, 0em);
   z-index: 10;
 }
