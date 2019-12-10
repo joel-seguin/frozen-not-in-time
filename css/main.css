@@ -9,51 +9,34 @@ html {
 }
 
 img {
-  width: 8.5;
+  width: 8.5em;
 }
 
 .text {
-  text-shadow: opacity(0);
-  animation: text-a .75s 1s ease-n forwards;
+  text-shadow: 2px 2px rgba(0, 0, 0, .5);
+  animation: text-a .75s 1s ease-in forwards;
   filter: opacity(0);
 }
 
-.head {
-  transform: translate(2.25em, -5.75em);
+.title {
+  transform: rotate(-9deg);
+  transform-origin: left center;
+  color: #990073;
+  position: relative;
+  left: -.15em;
 }
 
 .body {
   transform: rotate(-5deg);
   position: relative;
-  left: -.15em;
   color: #c09;
   transform-origin: left center;
-}
-
-.enjoy {
-  transform: translate(-9.5em, 3.8em);
-}
-
-h1 {
-  position: absolute;
-  font-size: 70px;
-  transform-origin: left center;
-  transform: rotate(-10deg);
-  max-width: 19em;
-  color: #990073;
-}
-
-h2 {
-  position: absolute;
-  color: #c09;
-  transform-origin: left center;
-  transform: rotate(-5deg);
   max-width: 19em;
 }
 
 .btn {
   position: relative;
-  top: 2.5;
+  top: 2.5em;
   left: 2em;
 }
 
@@ -159,7 +142,7 @@ h2 {
   }
 
   100% {
-    bottom: 0px;
+    bottom: 0%;
   }
 
 }
@@ -175,7 +158,7 @@ h2 {
   }
 
   100% {
-    filter: blur(100);
+    filter: opacity(100);
   }
 
 }
